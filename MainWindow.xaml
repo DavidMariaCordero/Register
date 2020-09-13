@@ -1,0 +1,68 @@
+﻿<Window x:Class="formulario.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:formulario" mc:Ignorable="d" Title="Registro de entradas" Height="442" Width="786" VerticalAlignment="Center">
+    <Grid>
+        <Label x:Name = "Entry" Width = "70" Height = "25" Margin = "-266,-339,0,0" Content = "EntradaId:"/>
+        <TextBox x:Name = "EntryBox" Width = "125" Height = "20" Margin = "-50,-339,0,0" Text = "0"/>
+        <Label x:Name = "date" Width = "70" Height = "25" Margin = "-266,-279,0,0" Content = "Fecha:"/>
+        <DatePicker x:Name = "dateBox" Width = "125" Height = "25" Margin = "-50,-279,0,0" Text = "04/01/2020"/>
+        <Label x:Name = "Supplier" Width = "70" Height = "25" Margin = "-266,-209,0,0" Content = "SuplidorId:"/>
+        <ComboBox x:Name = "SupplierBox" Width = "125" Height = "20" Margin = "-50,-209,0,0"/>
+        <Label x:Name = "Cacao" Width = "70" Height = "25" Margin = "-266,-139,0,0" Content = "CacaoId:"/>
+        <ComboBox x:Name = "CacaoBox" Width = "125" Height = "20" Margin = "-50,-139,0,0"/>
+        <Label x:Name = "Quantity" Width = "70" Height = "25" Margin = "-266,-69,0,0" Content = "Cantidad:"/>
+        <RichTextBox x:Name = "QuantityBox" Width = "125" Height = "20" Margin = "-50,-69,0,0"  BorderBrush = "Red">
+            <FlowDocument>
+                <Paragraph FontSize="12" Foreground="Gray">0</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name = "Cost" Width = "70" Height = "25" Margin = "-266,1,0,0" Content = "Costo:"/>
+        <RichTextBox x:Name = "CostBox" Width = "125" Height = "20" Margin = "-50,1,0,0" BorderBrush = "Red">
+            <FlowDocument>
+                <Paragraph FontSize="12" Foreground="Gray">0</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name = "Total" Width = "70" Height = "25" Margin = "-266,71,0,0" Content = "Total:"/>
+        <Label x:Name = "Amount" Width = "70" Height = "25" Margin = "-100,71,0,0" Content = "0"/>
+        <Label x:Name = "CreatedDate" Width = "100" Height = "25" Margin = "190,1,0,0" Content = "Fecha Creación:"/>
+        <Label x:Name = "FechaCreacion" Width = "80" Height = "25" Margin = "175,71,0,0" Content = "04/01/2020"/>
+        <Label x:Name = "Consult" Width = "125" Height = "25" Margin = "210,-209,0,0" Content = "Consultar Entradas:"/>
+        <Button x:Name = "ConsultButton" Width = "80" Height = "25" Margin = "210,-139,0,0" Background = "White">
+            <StackPanel Orientation="Horizontal">
+                <Image Stretch = "Fill" Source="C:\Users\David\Source\repos\Register\Icons\Zoom.png"/>
+                <TextBlock Text="Consultar" />
+            </StackPanel>
+        </Button>
+        <Button x:Name = "SearchButton" Width = "65" Height = "25" Margin = "210,-339,0,0" Background = "White">
+            <StackPanel Orientation="Horizontal">
+                <Image Stretch = "Fill" Source="C:\Users\David\Source\repos\Register\Icons\Zoom.png"/>
+                <TextBlock Text="Buscar" />
+            </StackPanel>
+        </Button>
+        <Label x:Name = "CratedBy" Width = "75" Height = "25" Margin = "-266,141,0,0" Content = "Creado Por:"/>
+        <Label x:Name = "User" Width = "75" Height = "25" Margin = "-100,141,0,0" Content = "Admin"/>
+        <Label x:Name = "ModifiedDate" Width = "135" Height = "25" Margin = "220,141,0,0" Content = "Fecha de Modificación:"/>
+        <Label x:Name = "FechaModificacion" Width = "80" Height = "25" Margin = "175,211,0,0" Content = "04/01/2020"/>
+        <Button x:Name = "NewButton" Width = "65" Height = "25" Margin = "-266,271,0,0" Background = "White">
+            <StackPanel Orientation="Horizontal">
+                <Image Stretch = "Fill" Source="C:\Users\David\Source\repos\Register\Icons\new-file-icon.png"/>
+                <TextBlock Text="Nuevo" />
+            </StackPanel>
+        </Button>
+        <Button x:Name = "SaveButton" Width = "80" Height = "25" Margin = "-25,271,0,0" Background = "White">
+            <StackPanel Orientation="Horizontal">
+                <Image Stretch = "Fill" Source="C:\Users\David\Source\repos\Register\Icons\Save-icon.png"/>
+                <TextBlock Text="Guardar" />
+            </StackPanel>
+        </Button>
+        <Button x:Name = "DeleteButton" Width = "80" Height = "25" Margin = "225,271,0,0" Background = "White">
+            <StackPanel Orientation="Horizontal">
+                <Image Stretch = "Fill" Source="C:\Users\David\Source\repos\Register\Icons\Trash-empty-icon.png"/>
+                <TextBlock Text="Eliminar" />
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>
